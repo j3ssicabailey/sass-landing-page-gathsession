@@ -1,0 +1,38 @@
+@mixin breakpoint($point) {
+  @if $point == largedesktop {
+    @media #{$largedesktop} {
+      @content;
+    }
+  }
+  @else if $point == desktop {
+    @media #{$desktop} {
+      @content;
+    }
+  }
+  @else if $point == tablet {
+    @media #{$tablet} {
+      @content;
+    }
+  }
+  @else if $point == tabletmobile {
+    @media #{$tabletmobile} {
+      @content;
+    }
+  }
+  @else if $point == mobile {
+    @media #{$mobile} {
+      @content;
+    }
+  }
+  @else if $point == smallmobile {
+    @media #{$smallmobile} {
+      @content;
+    }
+  }
+  @else if $point == rotate {
+    @media #{$rotate} {
+      @content;
+    }
+  }
+}
+
