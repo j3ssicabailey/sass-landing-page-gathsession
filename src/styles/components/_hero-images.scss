@@ -1,0 +1,43 @@
+.image-section {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1.5fr);
+    grid-template-rows: repeat(3, 1.33fr);
+    gap: 1.5rem;
+    width: 100%;
+    grid-template-areas:
+        "purple turquoise yellow"
+        "purple orange yellow"
+        "pink orange yellow";
+
+    @include respond-below(tablet) {
+        height: auto;  
+        width: 90%;  
+        margin: 0 auto; 
+    }
+
+    .image-container {
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        &.purple { grid-area: purple; }
+        &.turquoise { grid-area: turquoise; }
+        &.orange { grid-area: orange; }
+        &.pink { grid-area: pink; }
+        &.yellow { grid-area: yellow; }
+    }
+}
+
