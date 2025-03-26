@@ -11,14 +11,24 @@
             text-decoration: none;
             border-radius: 1rem;
             border-bottom-left-radius: 0;
+            &:hover {
+                color: $pink-accent;
+                background-color: $grey-accent;
+            }
         }
         &.btn-secondary {
             font-weight: 500;
+            padding: 4px 5px;
+            &:hover {
+                color: $pink-accent;
+            }
         }
     }
     span.arrow {
         font-size: $font-m;
     }
+
+    
     @include respond-below(tablet) {
         justify-content: center;
     }
