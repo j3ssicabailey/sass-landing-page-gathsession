@@ -9,7 +9,7 @@ h1, .logo {
 
 body {
   background-color: #2B2D38;
-  background-image: url("../../../public/icons/ellipse-upper.svg"), url("../../../public/icons/ellipse-lower.svg");
+  background-image: url("../../..public/icons/ellipse-upper.svg"), url("../../..public/icons/ellipse-lower.svg");
   background-position: top 15rem right -12rem, top 32rem right -10rem;
   background-repeat: no-repeat;
 }
