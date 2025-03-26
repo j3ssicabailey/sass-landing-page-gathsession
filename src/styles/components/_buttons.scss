@@ -1,0 +1,25 @@
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 50px;
+    .btn {
+        color: $light-text;
+        &.btn-primary {
+            background-color: $pink-accent;
+            padding: 1rem 4rem;
+            text-decoration: none;
+            border-radius: 1rem;
+            border-bottom-left-radius: 0;
+        }
+        &.btn-secondary {
+            font-weight: 500;
+        }
+    }
+    span.arrow {
+        font-size: $font-m;
+    }
+    @include respond-below(tablet) {
+        justify-content: center;
+    }
+}
